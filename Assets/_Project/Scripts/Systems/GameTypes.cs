@@ -1,12 +1,21 @@
-public enum Intent { Attack, Rest, Loot }
+public enum IntentType { Attack, Rest, Loot }
 public enum OutcomeGrade { Fail, Mixed, Success, Crit }
 
-public struct EventResult
+public struct HeroIntent
 {
-    public Intent Intent;
-    public OutcomeGrade Grade;
+    public IntentType Type;
+    public HeroIntent(IntentType type) => Type = type;
+}
+
+public struct ConsequenceResult
+{
     public int DeltaHP;
     public int DeltaXP;
     public int DeltaGold;
-    public bool HeroDied;   // hoy no lo usamos, pero queda listo
+}
+
+public struct HeroSnapshot
+{
+    public int HP, HPMax, XP, Gold;
+    public HeroSnapshot(Hero h) { HP = h.HP; HPMax = h.HPMax; XP = h.XP; Gold = h.Gold; }
 }

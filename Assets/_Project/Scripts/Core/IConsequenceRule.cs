@@ -1,16 +1,4 @@
-using UnityEngine;
-
-public class IConsequenceRule : MonoBehaviour
+public interface IConsequenceRule
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    ConsequenceResult Apply(HeroIntent intent, Hero hero);
 }

@@ -203,6 +203,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d0e24529dc8d048a1c9970e68f44e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rngBehaviour: {fileID: 496616517}
+  lowHpThreshold: 0.3
+  safe_Attack: 0.6
+  safe_Loot: 0.3
+  safe_Rest: 0.1
+  low_Attack: 0.1
+  low_Loot: 0.1
+  low_Rest: 0.7
 --- !u!114 &496616521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +228,7 @@ MonoBehaviour:
   hero:
     Name: "Valer\uFFFDn"
     Level: 1
-    HP: 10
+    HP: 2
     HPMax: 10
     XP: 0
     XpThreshold: 10
@@ -422,11 +430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4386698183325252039, guid: 37f30a23e91c4274c85dc5f00e40db0d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000000059604645
-      objectReference: {fileID: 0}
-    - target: {fileID: 5494818472875894143, guid: 37f30a23e91c4274c85dc5f00e40db0d, type: 3}
-      propertyPath: maxLines
-      value: 10
+      value: 0.0000035762787
       objectReference: {fileID: 0}
     - target: {fileID: 5808383567451593863, guid: 37f30a23e91c4274c85dc5f00e40db0d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -487,10 +491,6 @@ PrefabInstance:
     - target: {fileID: 6749089879174036824, guid: 37f30a23e91c4274c85dc5f00e40db0d, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6863041629831286457, guid: 37f30a23e91c4274c85dc5f00e40db0d, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 7400629088752432026, guid: 37f30a23e91c4274c85dc5f00e40db0d, type: 3}
       propertyPath: m_AnchorMax.y

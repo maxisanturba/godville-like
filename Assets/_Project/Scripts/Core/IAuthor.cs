@@ -1,16 +1,4 @@
-using UnityEngine;
-
-public class IAuthor : MonoBehaviour
+public interface IAuthor
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    string GetLogLine(HeroSnapshot before, HeroIntent intent, ConsequenceResult result);
 }

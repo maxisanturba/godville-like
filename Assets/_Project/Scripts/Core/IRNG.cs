@@ -1,16 +1,4 @@
-using UnityEngine;
-
-public class IRNG : MonoBehaviour
+public interface IRNG
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    float NextFloat();
 }
