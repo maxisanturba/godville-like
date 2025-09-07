@@ -1,0 +1,4 @@
+Main (Empty)
+├─ Game (Empty)            // tendrá el script GameLoop
+├─ Canvas_UI (tu prefab)   // ya lo tenés
+└─ EventSystem             // Unity lo crea solo

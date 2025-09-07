@@ -1,0 +1,39 @@
+- Core (Scripts/Core/)
+
+IRNG.cs – interfaz del generador aleatorio.
+
+IAuthor.cs – interfaz del narrador.
+
+IIntentResolver.cs – decide la intención del héroe cada tick.
+
+IConsequenceRule.cs – mapea intención+resultado a deltas.
+
+GameLoop.cs – MonoBehaviour orquestador del juego (tick).
+
+- Domain (Scripts/Domain/)
+
+Hero.cs – datos del héroe (HP, XP, Nivel, Oro…).
+
+(Opcional) WorldState.cs – ubicación/semilla (lo podés dejar para después).
+
+- Systems (Scripts/Systems/)
+
+DiceResolver.cs – tiradas (2d6) y grados (Fail/Mixed/Success/Crit).
+
+RandomIntentResolver.cs – implementación simple de IIntentResolver.
+
+SimpleConsequenceRule.cs – implementación simple de IConsequenceRule.
+
+- Narrative (Scripts/Narrative/)
+
+RuleBasedAuthor.cs – narrador por plantillas (fallback al inicio).
+
+(Opcional) LLMAuthor.cs – dejar vacío por ahora.
+
+- UI (Scripts/UI/)
+
+UIController.cs – refresca HP/Nivel/XP/Oro (referenciará TMPs del prefab).
+
+UILog.cs – agrega líneas al scroll (referenciará el Text del log).
+
+(Opcional) UIButtonActions.cs – para bendecir/maldecir luego.

@@ -1,0 +1,12 @@
+Assets/_Project/
+  Art/
+  Prefabs/
+  Scenes/
+  Scripts/
+    Core/         // orquestador, loop, RNG, interfaces
+    Domain/       // datos del héroe y estado del mundo
+    Systems/      // reglas (intents, consecuencias, dados)
+    Narrative/    // narrador (plantillas/IA)
+    UI/           // scripts de interfaz
+  UI/             // (si guardás layouts, sprites UI, etc.)
+  Data/           // (vacío por ahora; para ScriptableObjects más adelante)
